@@ -1,0 +1,52 @@
+## Funciones implementadas
+- Inscripción de alumno
+    -Agregar Nombre
+    -Agregar Apellido
+    -Agregar Grupo
+- Registro de prueba diagnósitca de alumnos
+    -Agregar título
+    -Agregar descripción
+    -Seleccionar el alumno
+    -Seleccionar el grado de avance
+- Mostrar la de prueba diagnóstica de un alumno seleccionado
+    -Seleccionar el alumno
+- Registras Evas formativas para un alumno
+    -Agregar título
+    -Agregar descripción
+    -Seleccionar el alumno
+- Mostrar Eva formativa seleccionada de un alumno seleccionado
+    -Seleccionar el alumno
+    -Seleccionar uno de los Evas del alumno
+- Creación de metas para grupos
+    -Seleccionar grupo
+    -Agregar descripción
+- Mostrar el Perfil de egresado de una competencia y su tramo seleccionado
+    -Seleccionar competencia
+    -Seleccionar tramo
+
+## Casos de pruebas correctas
+
+- Inscripció de alumno:
+    -Nombre: Juan
+    -Apellido: Pérez
+    -Grupo: Primero
+- Registro de prueba diagnósitca:
+    -Título: Título prueba
+    -Descripción: Descripción prueba
+    -Alumno: Juan Pérez
+    -Grado de avance: Satisfactorio
+- Mostrar Prueba diagnóstica:
+    -Alumno: Juan Pérez
+- Registro de eva formativa:
+    -Título: Título eva
+    -Descripción: Descripción eva
+    -Alumno: Juan Pérez
+- Mostrar eva formativa:
+    -Alumno: Juan Pérez 
+    -Eva: Título eva
+- Registro metas
+    -Grupo: Primero
+    -Contenido: Descripción meta
+- Mostrar perfil de egresado:
+    -Grupo: Primer ciclo tramo 2
+    -Competencias: Comunicación
