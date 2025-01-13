@@ -352,7 +352,6 @@ btnSeleccionarEva.addEventListener("click", (event) => {
 
 
 btnMostrarPruebaDiagdef.addEventListener("click", (event) => {
-  
   event.preventDefault();
   let alumnoSeleccionado = document.getElementById('alumnoMostrar2').value;
   if (alumnoSeleccionado !== "") {

@@ -52,7 +52,7 @@ export class pruebDiagnostic {
     if (
       (this.#gradoAvance !== "satisfactorio" &&
         this.#gradoAvance !== "insatisfactorio" &&
-        this.#gradoAvance !== "aceptable") ||
+        this.#gradoAvance !== "acceptable") ||
       this.#gradoAvance === "" ||
       this.#titulo === undefined ||
       this.#titulo === null
