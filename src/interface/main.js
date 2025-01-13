@@ -49,6 +49,7 @@ const btnMostrarPruebaDiag = document.getElementById("btnMostrarPruebDiag");
 const btnMostrarPruebaDiagdef = document.getElementById("btnMostrarPruebaDiagdef");
 const btnRegistrarPruebDiagform = document.getElementById("btnRegistrarPruebDiagform");
 const btnBarraInscribirAlumno = document.getElementById("inscribirAlumno-tab");
+const btnBarraPerfilesEgresados = document.getElementById("perfiles-tab");
 
 
 let listaMetas = new ListaMeta();
@@ -129,7 +130,13 @@ btnBarraInscribirAlumno.addEventListener("click", (event) => {
   mensajeAlumno.innerHTML = "";
 });
 
-
+btnBarraPerfilesEgresados.addEventListener("click", (event) => {
+  event.preventDefault();
+  let resultado = document.getElementById("txtPerfilEgresado");
+  resultado.innerHTML = "";
+  let mensajePerfilE = document.getElementById('mensajeSeleccionPerfilE');
+  mensajePerfilE.innerHTML ="";
+});
 
 btnInscribir.addEventListener("click", (event) => {
   event.preventDefault();
@@ -173,8 +180,8 @@ btnMostrarPE.addEventListener("click", (event) => {
   event.preventDefault();
   let competencia= document.getElementById("validationTooltip08").value;
   let grupo = document.getElementById("validationTooltip07").value;
+  let resultado = document.getElementById("txtPerfilEgresado");
   if(grupo !== "" && competencia !== ""){
-    let resultado = document.getElementById("txtPerfilEgresado");
     switch(competencia+grupo){
       case "comunicacionPCT2":
           resultado.innerHTML  = comunicacionPCT2;
@@ -270,6 +277,7 @@ btnMostrarPE.addEventListener("click", (event) => {
     let mensajePerfilE = document.getElementById('mensajeSeleccionPerfilE');
     mensajePerfilE.innerHTML = competencia + " " + grupo;
   }else {
+    resultado.innerHTML = "";
     let mensajePerfilE = document.getElementById('mensajeSeleccionPerfilE');
     mensajePerfilE.innerHTML = "Por favor verifique los datos";
   }
