@@ -48,6 +48,7 @@ const btnRegisPruebas = document.getElementById("btnRegistrarPruebDiag");
 const btnMostrarPruebaDiag = document.getElementById("btnMostrarPruebDiag");
 const btnMostrarPruebaDiagdef = document.getElementById("btnMostrarPruebaDiagdef");
 const btnRegistrarPruebDiagform = document.getElementById("btnRegistrarPruebDiagform");
+const btnBarraInscribirAlumno = document.getElementById("inscribirAlumno-tab");
 
 
 let listaMetas = new ListaMeta();
@@ -73,6 +74,7 @@ document.getElementById('btnRegistrarEva').addEventListener('click', function() 
     alumnoSelect.appendChild(option);
   });
 });
+
 
 btnMostrarPruebaDiag.addEventListener('click', function() {
   document.getElementById('formRegistrarPruebaDiag').style.display = 'none';
@@ -120,8 +122,19 @@ document.getElementById('btnMostrarEvas').addEventListener('click', function() {
   });
 });
 
+
+btnBarraInscribirAlumno.addEventListener("click", (event) => {
+  event.preventDefault();
+  let mensajeAlumno = document.getElementById('mensajeInscripcionAlumno');
+  mensajeAlumno.innerHTML = "";
+});
+
+
+
 btnInscribir.addEventListener("click", (event) => {
   event.preventDefault();
+  let mensajeAlumno = document.getElementById('mensajeInscripcionAlumno');
+  mensajeAlumno.innerHTML = "";
   let nombre = document.getElementById("validationTooltip01").value;
   let apellido = document.getElementById("validationTooltip02").value;
   let grupo = document.getElementById("validationTooltip03").value;
@@ -131,8 +144,10 @@ btnInscribir.addEventListener("click", (event) => {
     listaAlumnos.add(alumno);
     console.log(listaAlumnos);
     console.log("hecho");
-    let mensajeAlumno = document.getElementById('mensajeInscripcionAlumno');
     mensajeAlumno.innerHTML = "Usuario creado satisfactoriamente";
+    document.getElementById("validationTooltip01").value = "";
+    document.getElementById("validationTooltip02").value = "";
+    document.getElementById("validationTooltip03").value = "";
   }else {
     let mensajeAlumno = document.getElementById('mensajeInscripcionAlumno');
     mensajeAlumno.innerHTML = "Por favor verifique los datos, usuario no creado";
