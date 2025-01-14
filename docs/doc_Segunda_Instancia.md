@@ -31,4 +31,5 @@ Este fue el issue más complejo de resolver ya que este error se basaba en que e
 Issue 6: https://github.com/IngSoft-FIS-2024-2/proyecto-m3b-m4d-alonso-cabrera-carriquiry/issues/7
 
 Se modifica el valor del titulo en el HTML
+
 ![alt text](image-6.png)
