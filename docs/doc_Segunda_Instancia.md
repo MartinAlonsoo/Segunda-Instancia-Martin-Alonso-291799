@@ -13,7 +13,7 @@ Tambien se incorpora que al hacer click en la barra para mostrar la pestaña se 
 
 Issue 3: https://github.com/IngSoft-FIS-2024-2/proyecto-m3b-m4d-alonso-cabrera-carriquiry/issues/4
 
-Se espera la contestacion del docente ya que este issue reconoce como un error algo que no estaba en el alcance del proyecto declarado por nuestro grupo.
+Este issue se ignora ya que escapa de el objetivo del proyecto determinado por el grupo en el primer issue( acordado con el docente).
 
 Issue 4: https://github.com/IngSoft-FIS-2024-2/proyecto-m3b-m4d-alonso-cabrera-carriquiry/issues/5
 
